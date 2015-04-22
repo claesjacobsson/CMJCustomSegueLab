@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8ZX-ix-mio">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CustomSegueLab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,258 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mp-Ua-gaH">
+                                <rect key="frame" x="166" y="536" width="248" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Show modal (custom segue)">
+                                    <color key="titleColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="A33-z6-weG" kind="custom" identifier="custom" customClass="CustomSegue" customModule="CustomSegueLab" customModuleProvider="target" id="6MC-tn-IDh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="OyT-1A-cM1">
+                                <rect key="frame" x="250" y="42" width="100" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="Fsf-Rg-wZf"/>
+                                    <constraint firstAttribute="width" constant="100" id="mZA-P6-nZ1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wj8-GH-4CW">
+                                <rect key="frame" x="176" y="483" width="228" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Show modal (default segue)">
+                                    <color key="titleColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="A33-z6-weG" kind="show" identifier="standard" id="fFh-VQ-bBi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7mp-Ua-gaH" firstAttribute="top" secondItem="Wj8-GH-4CW" secondAttribute="bottom" constant="23" id="AjY-Nn-6rS"/>
+                            <constraint firstItem="OyT-1A-cM1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="IVh-CY-zmN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7mp-Ua-gaH" secondAttribute="bottom" constant="34" id="QdN-rK-HJh"/>
+                            <constraint firstAttribute="centerX" secondItem="7mp-Ua-gaH" secondAttribute="centerX" constant="10" id="Ryx-gV-Qml"/>
+                            <constraint firstAttribute="centerX" secondItem="OyT-1A-cM1" secondAttribute="centerX" id="UhY-sJ-7EQ"/>
+                            <constraint firstItem="7mp-Ua-gaH" firstAttribute="trailing" secondItem="Wj8-GH-4CW" secondAttribute="trailing" constant="10" id="alq-Fp-PkD"/>
+                            <constraint firstItem="7mp-Ua-gaH" firstAttribute="centerX" secondItem="Wj8-GH-4CW" secondAttribute="centerX" id="lhs-tR-GoW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="OyT-1A-cM1" id="PzG-ge-B0V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="148" y="608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Ir-hR-yWZ">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="8ZX-ix-mio" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1BZ-lq-3t2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0ok-zB-qHN" kind="relationship" relationship="rootViewController" id="Klz-GJ-fBa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kga-yu-Omc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559" y="608"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="8Tv-Nq-0Cd">
+            <objects>
+                <viewController id="A33-z6-weG" customClass="DetailViewController" customModule="CustomSegueLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DBT-dO-hfE"/>
+                        <viewControllerLayoutGuide type="bottom" id="jr2-Nf-zuj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Te2-IB-nlF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aia-Ov-3st">
+                                <rect key="frame" x="268" y="550" width="65" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lf2-SL-nBT" kind="unwind" identifier="unwind" unwindAction="unwindToMainViewController:" id="2gA-ac-l6Y"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ysX-uO-GN6">
+                                <rect key="frame" x="64" y="69" width="473" height="460"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8h-Qo-Yzy">
+                                <rect key="frame" x="151" y="551" width="58" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.99667537210000001" green="0.68464767930000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="A33-z6-weG" eventType="touchUpInside" id="ntM-zK-D7C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aia-Ov-3st" firstAttribute="top" secondItem="ysX-uO-GN6" secondAttribute="bottom" constant="21" id="5yF-v0-a9a"/>
+                            <constraint firstItem="aia-Ov-3st" firstAttribute="leading" secondItem="o8h-Qo-Yzy" secondAttribute="trailing" constant="59" id="NCu-XF-9is"/>
+                            <constraint firstItem="jr2-Nf-zuj" firstAttribute="top" secondItem="aia-Ov-3st" secondAttribute="bottom" constant="20" id="eE9-Zz-fGI"/>
+                            <constraint firstItem="ysX-uO-GN6" firstAttribute="top" secondItem="DBT-dO-hfE" secondAttribute="bottom" constant="49" id="hEm-Vc-Wiz"/>
+                            <constraint firstAttribute="centerX" secondItem="aia-Ov-3st" secondAttribute="centerX" constant="-0.5" id="id0-By-eQu"/>
+                            <constraint firstItem="ysX-uO-GN6" firstAttribute="leading" secondItem="Te2-IB-nlF" secondAttribute="leadingMargin" constant="48" id="sfM-ZH-nzF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ysX-uO-GN6" secondAttribute="trailing" constant="47" id="tD9-Nw-fCs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ysX-uO-GN6" id="sqI-Mz-doB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyU-lg-X9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lf2-SL-nBT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="608"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="5OU-fs-kTV">
+            <objects>
+                <viewController id="0ok-zB-qHN" customClass="MainViewController" customModule="CustomSegueLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xlI-TG-Wyx"/>
+                        <viewControllerLayoutGuide type="bottom" id="whK-Su-k3z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aY5-P3-QLs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-e3-SFz">
+                                <rect key="frame" x="166" y="533" width="248" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Custom segue">
+                                    <color key="titleColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2ZO-z9-Ojg" kind="custom" identifier="custom" customClass="CustomSegue" customModule="CustomSegueLab" id="bdE-lk-6zX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="TXn-II-sdB">
+                                <rect key="frame" x="250" y="42" width="100" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="Umd-es-TiQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="V5w-dV-9xL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlY-9Q-xQW">
+                                <rect key="frame" x="176" y="492" width="228" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Modal segue">
+                                    <color key="titleColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2ZO-z9-Ojg" kind="presentation" identifier="modal" id="Ncm-ti-xO8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBr-Rk-3XH">
+                                <rect key="frame" x="176" y="451" width="228" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Push segue">
+                                    <color key="titleColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2ZO-z9-Ojg" kind="show" identifier="push" id="bPZ-kJ-xE7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TXn-II-sdB" firstAttribute="top" secondItem="xlI-TG-Wyx" secondAttribute="bottom" constant="22" id="GKo-Ur-DHv"/>
+                            <constraint firstItem="dIT-e3-SFz" firstAttribute="centerX" secondItem="PlY-9Q-xQW" secondAttribute="centerX" id="INr-es-7eL"/>
+                            <constraint firstItem="whK-Su-k3z" firstAttribute="top" secondItem="dIT-e3-SFz" secondAttribute="bottom" constant="34" id="KW4-oY-u6V"/>
+                            <constraint firstAttribute="centerX" secondItem="TXn-II-sdB" secondAttribute="centerX" id="WN4-yt-kbn"/>
+                            <constraint firstItem="dIT-e3-SFz" firstAttribute="trailing" secondItem="PlY-9Q-xQW" secondAttribute="trailing" constant="10" id="fH5-kt-TcV"/>
+                            <constraint firstAttribute="centerX" secondItem="dIT-e3-SFz" secondAttribute="centerX" constant="10" id="gY3-e5-xb4"/>
+                            <constraint firstItem="PlY-9Q-xQW" firstAttribute="top" secondItem="sBr-Rk-3XH" secondAttribute="bottom" constant="8" id="nvY-zU-9b3"/>
+                            <constraint firstItem="sBr-Rk-3XH" firstAttribute="centerX" secondItem="PlY-9Q-xQW" secondAttribute="centerX" id="oQh-om-e5f"/>
+                            <constraint firstItem="dIT-e3-SFz" firstAttribute="top" secondItem="PlY-9Q-xQW" secondAttribute="bottom" constant="8" id="p4w-E7-PJs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WJl-no-fLQ"/>
+                    <connections>
+                        <outlet property="imageView" destination="TXn-II-sdB" id="W1c-fI-jsU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fg4-NL-rTR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="608"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Q6O-IJ-2YN">
+            <objects>
+                <viewController id="2ZO-z9-Ojg" customClass="DetailViewController" customModule="CustomSegueLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dei-45-0o9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pq3-cM-eHH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YPD-oA-cl7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S28-mg-See">
+                                <rect key="frame" x="268" y="550" width="65" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rkg-ja-OuB" kind="unwind" identifier="unwind" unwindAction="unwindToMainViewController:" id="bPX-Xl-hJU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-YY-nwE">
+                                <rect key="frame" x="64" y="69" width="473" height="460"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pq3-cM-eHH" firstAttribute="top" secondItem="S28-mg-See" secondAttribute="bottom" constant="20" id="Nvc-7h-anm"/>
+                            <constraint firstItem="NpT-YY-nwE" firstAttribute="top" secondItem="Dei-45-0o9" secondAttribute="bottom" constant="49" id="PtE-iY-yyG"/>
+                            <constraint firstAttribute="centerX" secondItem="S28-mg-See" secondAttribute="centerX" constant="-0.5" id="Zdj-RT-KAH"/>
+                            <constraint firstItem="NpT-YY-nwE" firstAttribute="leading" secondItem="YPD-oA-cl7" secondAttribute="leadingMargin" constant="48" id="dcJ-0e-LMT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NpT-YY-nwE" secondAttribute="trailing" constant="47" id="eU2-sQ-uj0"/>
+                            <constraint firstItem="S28-mg-See" firstAttribute="top" secondItem="NpT-YY-nwE" secondAttribute="bottom" constant="21" id="wjg-k0-Brw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="NpT-YY-nwE" id="vPe-ry-GMN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktS-hU-oaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rkg-ja-OuB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="608"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="watch" width="224" height="399"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6MC-tn-IDh"/>
+        <segue reference="Ncm-ti-xO8"/>
+    </inferredMetricsTieBreakers>
 </document>
