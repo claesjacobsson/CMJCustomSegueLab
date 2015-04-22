@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D772A07F1AE65ABB00772CA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772A07E1AE65ABB00772CA8 /* AppDelegate.swift */; };
-		D772A0811AE65ABB00772CA8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772A0801AE65ABB00772CA8 /* MainViewController.swift */; };
-		D772A0841AE65ABB00772CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D772A0821AE65ABB00772CA8 /* Main.storyboard */; };
-		D772A0861AE65ABB00772CA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D772A0851AE65ABB00772CA8 /* Images.xcassets */; };
-		D772A0891AE65ABB00772CA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D772A0871AE65ABB00772CA8 /* LaunchScreen.xib */; };
-		D772A0951AE65ABB00772CA8 /* CustomSegueLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772A0941AE65ABB00772CA8 /* CustomSegueLabTests.swift */; };
-		D772A09F1AE65B7500772CA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772A09E1AE65B7500772CA8 /* DetailViewController.swift */; };
-		D772A0A11AE65C3700772CA8 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772A0A01AE65C3700772CA8 /* CustomSegue.swift */; };
-		D7B599171AE6D223006D4D05 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B599161AE6D223006D4D05 /* TransitionManager.swift */; };
+		D75E06431AE7BF7600063740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E06371AE7BF7600063740 /* AppDelegate.swift */; };
+		D75E06441AE7BF7600063740 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75E06381AE7BF7600063740 /* LaunchScreen.xib */; };
+		D75E06451AE7BF7600063740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75E063A1AE7BF7600063740 /* Main.storyboard */; };
+		D75E06461AE7BF7600063740 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E063C1AE7BF7600063740 /* CustomSegue.swift */; };
+		D75E06471AE7BF7600063740 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E063D1AE7BF7600063740 /* DetailViewController.swift */; };
+		D75E06481AE7BF7600063740 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75E063E1AE7BF7600063740 /* Images.xcassets */; };
+		D75E06491AE7BF7600063740 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D75E063F1AE7BF7600063740 /* Info.plist */; };
+		D75E064A1AE7BF7600063740 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E06401AE7BF7600063740 /* MainViewController.swift */; };
+		D75E064C1AE7BF7600063740 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E06421AE7BF7600063740 /* TransitionManager.swift */; };
+		D75E06531AE7C09000063740 /* CustomSegueLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E06511AE7C00B00063740 /* CustomSegueLabTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,19 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D75E06371AE7BF7600063740 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D75E06391AE7BF7600063740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D75E063B1AE7BF7600063740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D75E063C1AE7BF7600063740 /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		D75E063D1AE7BF7600063740 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D75E063E1AE7BF7600063740 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D75E063F1AE7BF7600063740 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75E06401AE7BF7600063740 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D75E06421AE7BF7600063740 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		D75E064F1AE7C00500063740 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CMJCustomSegueLabTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		D75E06511AE7C00B00063740 /* CustomSegueLabTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomSegueLabTests.swift; path = CMJCustomSegueLabTests/CustomSegueLabTests.swift; sourceTree = SOURCE_ROOT; };
 		D772A0791AE65ABB00772CA8 /* CMJCustomSegueLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMJCustomSegueLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D772A07D1AE65ABB00772CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D772A07E1AE65ABB00772CA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D772A0801AE65ABB00772CA8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		D772A0831AE65ABB00772CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D772A0851AE65ABB00772CA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D772A0881AE65ABB00772CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D772A08E1AE65ABB00772CA8 /* CMJCustomSegueLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMJCustomSegueLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D772A0931AE65ABB00772CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D772A0941AE65ABB00772CA8 /* CustomSegueLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegueLabTests.swift; sourceTree = "<group>"; };
-		D772A09E1AE65B7500772CA8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		D772A0A01AE65C3700772CA8 /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
-		D7B599161AE6D223006D4D05 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +63,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D75E06361AE7BF7600063740 /* CMJCustomSegueLab */ = {
+			isa = PBXGroup;
+			children = (
+				D75E06371AE7BF7600063740 /* AppDelegate.swift */,
+				D75E06401AE7BF7600063740 /* MainViewController.swift */,
+				D75E063D1AE7BF7600063740 /* DetailViewController.swift */,
+				D75E064E1AE7BFD200063740 /* Transitions */,
+				D75E063A1AE7BF7600063740 /* Main.storyboard */,
+				D75E06381AE7BF7600063740 /* LaunchScreen.xib */,
+				D75E063E1AE7BF7600063740 /* Images.xcassets */,
+				D75E064D1AE7BFAE00063740 /* Supporting Files */,
+			);
+			path = CMJCustomSegueLab;
+			sourceTree = "<group>";
+		};
+		D75E064D1AE7BFAE00063740 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D75E063F1AE7BF7600063740 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D75E064E1AE7BFD200063740 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				D75E063C1AE7BF7600063740 /* CustomSegue.swift */,
+				D75E06421AE7BF7600063740 /* TransitionManager.swift */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
 		D772A0701AE65ABA00772CA8 = {
 			isa = PBXGroup;
 			children = (
-				D772A07B1AE65ABB00772CA8 /* CustomSegueLab */,
-				D772A0911AE65ABB00772CA8 /* CustomSegueLabTests */,
+				D75E06361AE7BF7600063740 /* CMJCustomSegueLab */,
+				D772A0911AE65ABB00772CA8 /* CMJCustomSegueLabTests */,
 				D772A07A1AE65ABB00772CA8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,43 +113,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D772A07B1AE65ABB00772CA8 /* CustomSegueLab */ = {
+		D772A0911AE65ABB00772CA8 /* CMJCustomSegueLabTests */ = {
 			isa = PBXGroup;
 			children = (
-				D772A07E1AE65ABB00772CA8 /* AppDelegate.swift */,
-				D772A0801AE65ABB00772CA8 /* MainViewController.swift */,
-				D772A09E1AE65B7500772CA8 /* DetailViewController.swift */,
-				D772A0A01AE65C3700772CA8 /* CustomSegue.swift */,
-				D7B599161AE6D223006D4D05 /* TransitionManager.swift */,
-				D772A0821AE65ABB00772CA8 /* Main.storyboard */,
-				D772A0851AE65ABB00772CA8 /* Images.xcassets */,
-				D772A0871AE65ABB00772CA8 /* LaunchScreen.xib */,
-				D772A07C1AE65ABB00772CA8 /* Supporting Files */,
-			);
-			path = CustomSegueLab;
-			sourceTree = "<group>";
-		};
-		D772A07C1AE65ABB00772CA8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D772A07D1AE65ABB00772CA8 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D772A0911AE65ABB00772CA8 /* CustomSegueLabTests */ = {
-			isa = PBXGroup;
-			children = (
-				D772A0941AE65ABB00772CA8 /* CustomSegueLabTests.swift */,
+				D75E06511AE7C00B00063740 /* CustomSegueLabTests.swift */,
 				D772A0921AE65ABB00772CA8 /* Supporting Files */,
 			);
+			name = CMJCustomSegueLabTests;
 			path = CustomSegueLabTests;
 			sourceTree = "<group>";
 		};
 		D772A0921AE65ABB00772CA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D772A0931AE65ABB00772CA8 /* Info.plist */,
+				D75E064F1AE7C00500063740 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,9 +211,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D772A0841AE65ABB00772CA8 /* Main.storyboard in Resources */,
-				D772A0891AE65ABB00772CA8 /* LaunchScreen.xib in Resources */,
-				D772A0861AE65ABB00772CA8 /* Images.xcassets in Resources */,
+				D75E06491AE7BF7600063740 /* Info.plist in Resources */,
+				D75E06441AE7BF7600063740 /* LaunchScreen.xib in Resources */,
+				D75E06481AE7BF7600063740 /* Images.xcassets in Resources */,
+				D75E06451AE7BF7600063740 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,11 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7B599171AE6D223006D4D05 /* TransitionManager.swift in Sources */,
-				D772A0A11AE65C3700772CA8 /* CustomSegue.swift in Sources */,
-				D772A0811AE65ABB00772CA8 /* MainViewController.swift in Sources */,
-				D772A09F1AE65B7500772CA8 /* DetailViewController.swift in Sources */,
-				D772A07F1AE65ABB00772CA8 /* AppDelegate.swift in Sources */,
+				D75E06431AE7BF7600063740 /* AppDelegate.swift in Sources */,
+				D75E06461AE7BF7600063740 /* CustomSegue.swift in Sources */,
+				D75E064A1AE7BF7600063740 /* MainViewController.swift in Sources */,
+				D75E06471AE7BF7600063740 /* DetailViewController.swift in Sources */,
+				D75E064C1AE7BF7600063740 /* TransitionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D772A0951AE65ABB00772CA8 /* CustomSegueLabTests.swift in Sources */,
+				D75E06531AE7C09000063740 /* CustomSegueLabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,20 +259,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D772A0821AE65ABB00772CA8 /* Main.storyboard */ = {
+		D75E06381AE7BF7600063740 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D772A0831AE65ABB00772CA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D772A0871AE65ABB00772CA8 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D772A0881AE65ABB00772CA8 /* Base */,
+				D75E06391AE7BF7600063740 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D75E063A1AE7BF7600063740 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75E063B1AE7BF7600063740 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -354,7 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CustomSegueLab/Info.plist;
+				INFOPLIST_FILE = CMJCustomSegueLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = CMJCustomSegueLab;
 			};
@@ -364,7 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CustomSegueLab/Info.plist;
+				INFOPLIST_FILE = CMJCustomSegueLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = CMJCustomSegueLab;
 			};
@@ -382,7 +393,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CustomSegueLabTests/Info.plist;
+				INFOPLIST_FILE = CMJCustomSegueLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = CMJCustomSegueLabTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMJCustomSegueLab.app/CMJCustomSegueLab";
@@ -397,7 +408,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CustomSegueLabTests/Info.plist;
+				INFOPLIST_FILE = CMJCustomSegueLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = CMJCustomSegueLabTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMJCustomSegueLab.app/CMJCustomSegueLab";
