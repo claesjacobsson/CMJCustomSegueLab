@@ -45,8 +45,6 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
         detailViewController.imageView.hidden = true
         let snapshotFrom = fromVC!.view.resizableSnapshotViewFromRect(fromVC!.view.frame, afterScreenUpdates: true, withCapInsets: UIEdgeInsetsZero)
         let snapshotTo = toVC!.view.resizableSnapshotViewFromRect(toVC!.view.frame, afterScreenUpdates: true, withCapInsets: UIEdgeInsetsZero)
-        mainViewController.imageView.hidden = false
-        detailViewController.imageView.hidden = false
        
         // Add animation elements to containerView
         container.addSubview(snapshotTo)
@@ -55,6 +53,7 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
         
         // Hide toVC view until its snapshot has been animated
         toVC!.view.alpha = 0.0
+        snapshotTo.alpha = 0.0
        
         if self.presenting {
             container.addSubview(toVC!.view)
@@ -71,6 +70,8 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
             
             }, completion: { (finished) -> Void in
                 
+                mainViewController.imageView.hidden = false
+                detailViewController.imageView.hidden = false
                 toVC?.view.alpha = 1.0
                 animationImageView.removeFromSuperview()
                 snapshotFrom.removeFromSuperview()
@@ -83,8 +84,8 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
                 transitionContext.completeTransition(finished)
         })
     }
- 
     
+   
     // MARK: UIViewControllerTransitioningDelegate
     
     // Animator used when presenting a viewcontroller
