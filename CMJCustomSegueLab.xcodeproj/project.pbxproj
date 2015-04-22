@@ -29,14 +29,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D772A0791AE65ABB00772CA8 /* CustomSegueLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSegueLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D772A0791AE65ABB00772CA8 /* CMJCustomSegueLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMJCustomSegueLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D772A07D1AE65ABB00772CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D772A07E1AE65ABB00772CA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D772A0801AE65ABB00772CA8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D772A0831AE65ABB00772CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D772A0851AE65ABB00772CA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D772A0881AE65ABB00772CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D772A08E1AE65ABB00772CA8 /* CustomSegueLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSegueLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D772A08E1AE65ABB00772CA8 /* CMJCustomSegueLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMJCustomSegueLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D772A0931AE65ABB00772CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D772A0941AE65ABB00772CA8 /* CustomSegueLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegueLabTests.swift; sourceTree = "<group>"; };
 		D772A09E1AE65B7500772CA8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -74,8 +74,8 @@
 		D772A07A1AE65ABB00772CA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D772A0791AE65ABB00772CA8 /* CustomSegueLab.app */,
-				D772A08E1AE65ABB00772CA8 /* CustomSegueLabTests.xctest */,
+				D772A0791AE65ABB00772CA8 /* CMJCustomSegueLab.app */,
+				D772A08E1AE65ABB00772CA8 /* CMJCustomSegueLabTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D772A0781AE65ABB00772CA8 /* CustomSegueLab */ = {
+		D772A0781AE65ABB00772CA8 /* CMJCustomSegueLab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D772A0981AE65ABB00772CA8 /* Build configuration list for PBXNativeTarget "CustomSegueLab" */;
+			buildConfigurationList = D772A0981AE65ABB00772CA8 /* Build configuration list for PBXNativeTarget "CMJCustomSegueLab" */;
 			buildPhases = (
 				D772A0751AE65ABB00772CA8 /* Sources */,
 				D772A0761AE65ABB00772CA8 /* Frameworks */,
@@ -136,14 +136,14 @@
 			);
 			dependencies = (
 			);
-			name = CustomSegueLab;
+			name = CMJCustomSegueLab;
 			productName = CustomSegueLab;
-			productReference = D772A0791AE65ABB00772CA8 /* CustomSegueLab.app */;
+			productReference = D772A0791AE65ABB00772CA8 /* CMJCustomSegueLab.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D772A08D1AE65ABB00772CA8 /* CustomSegueLabTests */ = {
+		D772A08D1AE65ABB00772CA8 /* CMJCustomSegueLabTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D772A09B1AE65ABB00772CA8 /* Build configuration list for PBXNativeTarget "CustomSegueLabTests" */;
+			buildConfigurationList = D772A09B1AE65ABB00772CA8 /* Build configuration list for PBXNativeTarget "CMJCustomSegueLabTests" */;
 			buildPhases = (
 				D772A08A1AE65ABB00772CA8 /* Sources */,
 				D772A08B1AE65ABB00772CA8 /* Frameworks */,
@@ -154,9 +154,9 @@
 			dependencies = (
 				D772A0901AE65ABB00772CA8 /* PBXTargetDependency */,
 			);
-			name = CustomSegueLabTests;
+			name = CMJCustomSegueLabTests;
 			productName = CustomSegueLabTests;
-			productReference = D772A08E1AE65ABB00772CA8 /* CustomSegueLabTests.xctest */;
+			productReference = D772A08E1AE65ABB00772CA8 /* CMJCustomSegueLabTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D772A0741AE65ABA00772CA8 /* Build configuration list for PBXProject "CustomSegueLab" */;
+			buildConfigurationList = D772A0741AE65ABA00772CA8 /* Build configuration list for PBXProject "CMJCustomSegueLab" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,8 +190,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D772A0781AE65ABB00772CA8 /* CustomSegueLab */,
-				D772A08D1AE65ABB00772CA8 /* CustomSegueLabTests */,
+				D772A0781AE65ABB00772CA8 /* CMJCustomSegueLab */,
+				D772A08D1AE65ABB00772CA8 /* CMJCustomSegueLabTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,7 +242,7 @@
 /* Begin PBXTargetDependency section */
 		D772A0901AE65ABB00772CA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D772A0781AE65ABB00772CA8 /* CustomSegueLab */;
+			target = D772A0781AE65ABB00772CA8 /* CMJCustomSegueLab */;
 			targetProxy = D772A08F1AE65ABB00772CA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -356,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomSegueLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CMJCustomSegueLab;
 			};
 			name = Debug;
 		};
@@ -366,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomSegueLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CMJCustomSegueLab;
 			};
 			name = Release;
 		};
@@ -384,8 +384,8 @@
 				);
 				INFOPLIST_FILE = CustomSegueLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomSegueLab.app/CustomSegueLab";
+				PRODUCT_NAME = CMJCustomSegueLabTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMJCustomSegueLab.app/CMJCustomSegueLab";
 			};
 			name = Debug;
 		};
@@ -399,15 +399,15 @@
 				);
 				INFOPLIST_FILE = CustomSegueLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomSegueLab.app/CustomSegueLab";
+				PRODUCT_NAME = CMJCustomSegueLabTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMJCustomSegueLab.app/CMJCustomSegueLab";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D772A0741AE65ABA00772CA8 /* Build configuration list for PBXProject "CustomSegueLab" */ = {
+		D772A0741AE65ABA00772CA8 /* Build configuration list for PBXProject "CMJCustomSegueLab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D772A0961AE65ABB00772CA8 /* Debug */,
@@ -416,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D772A0981AE65ABB00772CA8 /* Build configuration list for PBXNativeTarget "CustomSegueLab" */ = {
+		D772A0981AE65ABB00772CA8 /* Build configuration list for PBXNativeTarget "CMJCustomSegueLab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D772A0991AE65ABB00772CA8 /* Debug */,
@@ -425,7 +425,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D772A09B1AE65ABB00772CA8 /* Build configuration list for PBXNativeTarget "CustomSegueLabTests" */ = {
+		D772A09B1AE65ABB00772CA8 /* Build configuration list for PBXNativeTarget "CMJCustomSegueLabTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D772A09C1AE65ABB00772CA8 /* Debug */,

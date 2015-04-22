@@ -1,6 +1,6 @@
 //
 //  DetailViewController.swift
-//  CustomSegueLab
+//  CMJCustomSegueLab
 //
 //  Created by Claes Jacobsson on 2015-04-21.
 //  Copyright (c) 2015 Claes Jacobsson. All rights reserved.
