@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-e3-SFz">
-                                <rect key="frame" x="231" y="533" width="119" height="33"/>
+                                <rect key="frame" x="231" y="547" width="119" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Custom segue">
                                     <color key="titleColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -53,7 +53,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlY-9Q-xQW">
-                                <rect key="frame" x="241" y="492" width="99" height="33"/>
+                                <rect key="frame" x="241" y="506" width="99" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Modal segue">
                                     <color key="titleColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBr-Rk-3XH">
-                                <rect key="frame" x="245" y="451" width="90" height="33"/>
+                                <rect key="frame" x="245" y="465" width="90" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Push segue">
                                     <color key="titleColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,7 +79,7 @@
                         <constraints>
                             <constraint firstItem="TXn-II-sdB" firstAttribute="top" secondItem="xlI-TG-Wyx" secondAttribute="bottom" constant="22" id="GKo-Ur-DHv"/>
                             <constraint firstItem="dIT-e3-SFz" firstAttribute="centerX" secondItem="PlY-9Q-xQW" secondAttribute="centerX" id="INr-es-7eL"/>
-                            <constraint firstItem="whK-Su-k3z" firstAttribute="top" secondItem="dIT-e3-SFz" secondAttribute="bottom" constant="34" id="KW4-oY-u6V"/>
+                            <constraint firstItem="whK-Su-k3z" firstAttribute="top" secondItem="dIT-e3-SFz" secondAttribute="bottom" constant="20" id="KW4-oY-u6V"/>
                             <constraint firstAttribute="centerX" secondItem="TXn-II-sdB" secondAttribute="centerX" id="WN4-yt-kbn"/>
                             <constraint firstItem="dIT-e3-SFz" firstAttribute="trailing" secondItem="PlY-9Q-xQW" secondAttribute="trailing" constant="10" id="fH5-kt-TcV"/>
                             <constraint firstAttribute="centerX" secondItem="dIT-e3-SFz" secondAttribute="centerX" constant="10" id="gY3-e5-xb4"/>
@@ -109,8 +109,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-YY-nwE">
+                                <rect key="frame" x="64" y="69" width="473" height="457"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S28-mg-See">
-                                <rect key="frame" x="279" y="547" width="44" height="33"/>
+                                <rect key="frame" x="278" y="547" width="44" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Close">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,17 +123,14 @@
                                     <segue destination="rkg-ja-OuB" kind="unwind" identifier="unwind" unwindAction="unwindToMainViewController:" id="bPX-Xl-hJU"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-YY-nwE">
-                                <rect key="frame" x="64" y="69" width="473" height="457"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.070386976000000004" green="0.56250321869999997" blue="0.75981974600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="S28-mg-See" secondAttribute="centerX" id="3rW-6C-qXd"/>
                             <constraint firstItem="NpT-YY-nwE" firstAttribute="top" secondItem="Dei-45-0o9" secondAttribute="bottom" constant="49" id="PtE-iY-yyG"/>
-                            <constraint firstAttribute="centerX" secondItem="S28-mg-See" secondAttribute="centerX" constant="-1" id="bIC-j6-xC6"/>
                             <constraint firstItem="NpT-YY-nwE" firstAttribute="leading" secondItem="YPD-oA-cl7" secondAttribute="leadingMargin" constant="48" id="dcJ-0e-LMT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NpT-YY-nwE" secondAttribute="trailing" constant="47" id="eU2-sQ-uj0"/>
-                            <constraint firstItem="Pq3-cM-eHH" firstAttribute="top" secondItem="S28-mg-See" secondAttribute="bottom" constant="20" id="gau-FX-mTE"/>
+                            <constraint firstItem="Pq3-cM-eHH" firstAttribute="top" secondItem="S28-mg-See" secondAttribute="bottom" constant="20" id="nKF-xZ-UcN"/>
                         </constraints>
                     </view>
                     <connections>
