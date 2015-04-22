@@ -15,6 +15,7 @@
 		D772A0951AE65ABB00772CA8 /* CustomSegueLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772A0941AE65ABB00772CA8 /* CustomSegueLabTests.swift */; };
 		D772A09F1AE65B7500772CA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772A09E1AE65B7500772CA8 /* DetailViewController.swift */; };
 		D772A0A11AE65C3700772CA8 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772A0A01AE65C3700772CA8 /* CustomSegue.swift */; };
+		D7AEA8251AE7A9B000BDD5B5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D7AEA8241AE7A9B000BDD5B5 /* README.md */; };
 		D7B599171AE6D223006D4D05 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B599161AE6D223006D4D05 /* TransitionManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		D772A0941AE65ABB00772CA8 /* CustomSegueLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegueLabTests.swift; sourceTree = "<group>"; };
 		D772A09E1AE65B7500772CA8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D772A0A01AE65C3700772CA8 /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		D7AEA8241AE7A9B000BDD5B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D7B599161AE6D223006D4D05 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D772A07D1AE65ABB00772CA8 /* Info.plist */,
+				D7AEA8241AE7A9B000BDD5B5 /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7AEA8251AE7A9B000BDD5B5 /* README.md in Sources */,
 				D7B599171AE6D223006D4D05 /* TransitionManager.swift in Sources */,
 				D772A0A11AE65C3700772CA8 /* CustomSegue.swift in Sources */,
 				D772A0811AE65ABB00772CA8 /* MainViewController.swift in Sources */,
